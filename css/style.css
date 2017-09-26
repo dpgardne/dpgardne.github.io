@@ -71,7 +71,8 @@ header {
   line-height: 1.5;
 }
 
-#project {
+
+.project {
   background-color: #3498DB;
   color: #ECF0F1;
   font-family: 'Source Sans Pro', sans-serif;
@@ -80,14 +81,32 @@ header {
 
 }
 
-#project_header {
+.project_header {
     font-size: 24px;
     margin-bottom: 16px;
 }
 
 .project_links {
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 80px;
+
 }
+
+#project_two {
+  clear: both;
+}
+
+#project_three {
+  clear: both;
+}
+
+#project_four {
+  clear: both;
+}
+
+/*.project_title {
+  margin: 20px;
+}*/
 
 .project_links a {
   padding: 5px;
@@ -97,6 +116,15 @@ header {
 .project_img {
   margin-top: 14px;
   margin-bottom: 14px;
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+  height: 120px;
+}
+
+.project_p {
+  margin: 15px;
+  line-height: 1.2;
 }
 
 
@@ -158,5 +186,20 @@ header {
     height: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .project {
+    height: 1500px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project {
+    height: 1700px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project {
+    height: 1800px;
   }
 }
