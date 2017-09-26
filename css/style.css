@@ -1,6 +1,7 @@
+/*navigation */
 header {
   height: 50px;
-  background-color: #047878;
+  background-color: #2980B9;
   padding-top: 20px;
   color: white;
 }
@@ -12,10 +13,12 @@ header {
 }
 
 .nav_logo a {
-  color: white;
+  color: #ECF0F1;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0.8;
 }
 
 .nav {
@@ -42,15 +45,62 @@ header {
   width: 130px;
   font-size: 16px;
   text-decoration: none;
-  background-color: #047878;
+  background-color: #2980B9;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu_item {
   display: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/*navigation */
+
+#bio {
+  background-color: #2C3E50;
+  height: 200px;
+  color: #ECF0F1;
+  padding: 55px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+}
+
+#bio_p {
+  font-size: 18px;
+  padding-top: 15px;
+  line-height: 1.5;
+}
+
+#project {
+  background-color: #3498DB;
+  color: #ECF0F1;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 55px;
+  height: 800px;
 
 }
+
+#project_header {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.project_links {
+  margin: 5px;
+}
+
+.project_links a {
+  padding: 5px;
+  color: white;
+}
+
+.project_img {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+
+/*media queries*/
 
 @media only screen and (max-width: 730px) {
   .nav ul {
@@ -60,6 +110,7 @@ header {
   .menu_item {
     display: block;
     margin-right: 2px;
+    cursor: pointer;
   }
 
   .nav {
@@ -89,10 +140,23 @@ header {
 
   .nav ul li a {
     padding: 10px;
-    background-color: #047878;
+    background-color: #2980B9;
     display: block;
     color: white;
+    cursor: pointer;
   }
 
+  .nav ul li a:hover {
+    background-color: #3498DB;
+  }
+  #bio {
+    height: 400px;
+  }
 
+  .project_img {
+    width: 310px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
