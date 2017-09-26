@@ -1,4 +1,6 @@
+/*-------------------------*/
 /*navigation */
+/*-------------------------*/
 header {
   height: 50px;
   background-color: #2980B9;
@@ -54,8 +56,13 @@ header {
   display: none;
   font-family: 'Source Sans Pro', sans-serif;
 }
+/*-------------------------*/
 /*navigation */
+/*-------------------------*/
+
+/*-------------------------*/
 /*bio*/
+/*-------------------------*/
 #bio {
   background-color: #2C3E50;
   height: 200px;
@@ -70,8 +77,13 @@ header {
   padding-top: 15px;
   line-height: 1.5;
 }
+/*-------------------------*/
 /*bio*/
+/*-------------------------*/
+
+/*-------------------------*/
 /*project*/
+/*-------------------------*/
 .project {
   background-color: #3498DB;
   color: #ECF0F1;
@@ -122,8 +134,13 @@ header {
   margin: 15px;
   line-height: 1.2;
 }
+/*-------------------------*/
 /*project*/
+/*-------------------------*/
+
+/*-------------------------*/
 /*contact*/
+/*-------------------------*/
 #contact {
   background-color: #ECF0F1;
   font-family: 'Source Sans Pro', sans-serif;
@@ -140,18 +157,32 @@ header {
   margin-top: 20px;
 }
 
-#contact_list a {
-  padding-right: 20px;
+#contact_list a:nth-child(2) {
   text-decoration: none;
+  padding-right: 20px;
   font-weight: bold;
+  color:
 }
 
+#contact_list a:nth-child(1) {
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+/*-------------------------*/
 /*contact*/
+/*-------------------------*/
 
 
 
 
-/*media queries*/
+/*-------------------------*/
+/*MEDIA QUERIES*/
+/*-------------------------*/
+
+/*-------------------------*/
+/*Take effect 730 < */
+/*-------------------------*/
 @media only screen and (max-width: 730px) {
   .nav ul {
     display: none;
@@ -169,7 +200,7 @@ header {
     position: relative;
   }
 
-  /*ul appear on click*/
+  /*ul appear on click via jQuery*/
   .nav .jq_nav {
     display: block;
     margin: 10px;
@@ -200,21 +231,28 @@ header {
     background-color: #3498DB;
   }
   #bio {
-    height: 400px;
+    height: 250px;
   }
 
   .project_img {
-    width: 310px;
+    width: 280px;
     height: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .project {
-    height: 1500px;
+    height: 1600px;
+  }
+
+  .project_p {
+    clear:both;
   }
 }
 
-@media only screen and (max-width: 450px) {
+/*-------------------------*/
+/*Take effect 510 =< */
+/*-------------------------*/
+@media only screen and (max-width: 510px) {
   .project {
     height: 1700px;
   }
@@ -229,11 +267,33 @@ header {
     width: 100%;
   }
 
+  #contact_list a:nth-child(1) {
+    text-decoration: none;
+    padding-right: 0px;
+  }
+
+
+
+  #bio {
+    height: 350px;
+  }
+
 }
 
+/*-------------------------*/
+/*Take effect 400 =< */
+/*-------------------------*/
 @media only screen and (max-width: 400px) {
   .project {
     height: 1800px;
   }
 
+  #bio {
+    min-height: 450px;
+
+  }
 }
+
+/*-------------------------*/
+/*MEDIA QUERIES*/
+/*-------------------------*/
