@@ -1,17 +1,21 @@
 header {
-  height: 100px;
-  background-color: #cccccc;
-  padding-top: 50px;
-}
-
-.wrapper {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  height: 50px;
+  background-color: #047878;
+  padding-top: 20px;
+  color: white;
 }
 
 .nav_logo {
   float: left;
   margin-left: 50px;
+  color: white;
+}
+
+.nav_logo a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
 }
 
 .nav {
@@ -36,21 +40,26 @@ header {
 .nav ul li a {
   display: block;
   width: 130px;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
+  background-color: #047878;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu_item {
   display: none;
+
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 730px) {
   .nav ul {
     display: none;
   }
 
   .menu_item {
     display: block;
+    margin-right: 2px;
   }
 
   .nav {
@@ -62,7 +71,6 @@ header {
   /*ul appear on click*/
   .nav .jq_nav {
     display: block;
-
     margin: 10px;
     position: absolute;
     left: -150px;
@@ -81,16 +89,10 @@ header {
 
   .nav ul li a {
     padding: 10px;
-    background-color: #ccc;
+    background-color: #047878;
     display: block;
+    color: white;
   }
 
-  /*.nav_item {
-    display: block;
-    width: 100%;
-    margin: 10px;*/
-
-
-  }
 
 }
