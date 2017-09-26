@@ -161,12 +161,13 @@ header {
   text-decoration: none;
   padding-right: 20px;
   font-weight: bold;
-  color:
+  color: #2C3E50
 }
 
 #contact_list a:nth-child(1) {
   text-decoration: none;
   padding-right: 20px;
+  color: #2C3E50
 }
 
 /*-------------------------*/
