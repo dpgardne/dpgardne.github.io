@@ -55,7 +55,7 @@ header {
   font-family: 'Source Sans Pro', sans-serif;
 }
 /*navigation */
-
+/*bio*/
 #bio {
   background-color: #2C3E50;
   height: 200px;
@@ -70,15 +70,14 @@ header {
   padding-top: 15px;
   line-height: 1.5;
 }
-
-
+/*bio*/
+/*project*/
 .project {
   background-color: #3498DB;
   color: #ECF0F1;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 55px;
   height: 800px;
-
 }
 
 .project_header {
@@ -104,9 +103,6 @@ header {
   clear: both;
 }
 
-/*.project_title {
-  margin: 20px;
-}*/
 
 .project_links a {
   padding: 5px;
@@ -126,10 +122,36 @@ header {
   margin: 15px;
   line-height: 1.2;
 }
+/*project*/
+/*contact*/
+#contact {
+  background-color: #ECF0F1;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 55px;
+  height: 100px;
+  color: #3498DB;
+  margin: 0px;
+  font-size: 24px;
+}
+
+#contact_list li  {
+  float: left;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#contact_list a {
+  padding-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*contact*/
+
+
 
 
 /*media queries*/
-
 @media only screen and (max-width: 730px) {
   .nav ul {
     display: none;
