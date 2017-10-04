@@ -1,8 +1,14 @@
 $( () => {
 const $container = $('.menu_item')
+const $nav_item = $('.nav_item')
 console.log($container)
 
 $container.on('click', function(){
+  $('ul.nav_container').toggleClass("jq_nav")
+
+})
+
+$nav_item.on('click', function(){
   $('ul.nav_container').toggleClass("jq_nav")
 
 })
@@ -11,7 +17,7 @@ $container.on('click', function(){
 
 
 //toggle jquery hide and show jquery
-$('example-class').toggle();
+// $('example-class').toggle();
 
 //toggle class
 // $('.example-class').toggleClass('active')
